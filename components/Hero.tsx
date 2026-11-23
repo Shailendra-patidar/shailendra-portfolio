@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowUpRight, FileText, Github, Linkedin, Mail, Sparkles, Terminal, CheckCircle2, Cpu } from "lucide-react";
+import { ArrowUpRight, FileText, Github, Linkedin, Mail, Sparkles, Terminal, Bot } from "lucide-react";
 import { PERSONAL_INFO } from "@/data/portfolio";
 
 export default function Hero() {
@@ -73,13 +73,13 @@ export default function Hero() {
             <div className="flex items-center gap-2.5 mb-6">
               <Terminal className="w-4 h-4 text-champagne-400 flex-shrink-0" />
               <h2 className="text-sm sm:text-base md:text-lg font-medium text-champagne-300/90 tracking-wide">
-                Python Developer <span className="text-champagne-500/50 mx-1">|</span> AI/ML Enthusiast <span className="text-champagne-500/50 mx-1">|</span> Generative AI Explorer
+                Python Developer <span className="text-champagne-500/50 mx-1">|</span> AI/ML &amp; Generative AI Enthusiast
               </h2>
             </div>
 
             {/* Narrative Bio */}
             <p className="text-base sm:text-lg text-ivory-muted leading-relaxed max-w-2xl mb-9 font-sans font-light">
-              I am dedicated to building intelligent applications and practical software solutions. Exploring modern Retrieval-Augmented Generation (RAG) architectures, machine learning classifiers, and robust asynchronous Python backends that bridge high-level data models with seamless user experiences.
+              I am dedicated to building intelligent applications and practical software solutions. Actively exploring Python development, machine learning algorithms, Retrieval-Augmented Generation (RAG) pipelines, Generative AI, and Agentic AI workflows to bridge high-level reasoning models with scalable, production-grade backends.
             </p>
 
             {/* CTA Buttons */}
@@ -234,9 +234,9 @@ export default function Hero() {
                     : "translate(0, 0)",
                 }}
               >
-                <Cpu className="w-3.5 h-3.5 text-champagne-400" />
+                <Bot className="w-3.5 h-3.5 text-champagne-400" />
                 <span className="text-[11px] font-mono text-champagne-300">
-                  RAG &amp; FastAPI Pipelines
+                  RAG &amp; Agentic AI Workflows
                 </span>
               </div>
 

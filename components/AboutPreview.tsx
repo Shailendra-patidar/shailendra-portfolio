@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowUpRight, Cpu, Compass, BookOpen } from "lucide-react";
+import { ArrowUpRight, Cpu, Compass, BookOpen, Bot } from "lucide-react";
 import { PERSONAL_INFO } from "@/data/portfolio";
 
 export default function AboutPreview() {
@@ -22,7 +22,7 @@ export default function AboutPreview() {
             transition={{ duration: 0.8 }}
             className="lg:col-span-5"
           >
-            <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-champagne-400 font-semibold mb-4">
+            <div className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.25em] text-champagne-400 font-semibold mb-4 px-3 py-1 rounded-full bg-champagne-400/10 border border-champagne-400/20">
               <Compass className="w-3.5 h-3.5" />
               <span>About Overview</span>
             </div>
@@ -30,7 +30,7 @@ export default function AboutPreview() {
               Engineering with curiosity &amp; computational rigor.
             </h2>
             <p className="text-ivory-muted text-base leading-relaxed mb-8 font-light">
-              I am an aspiring AI/ML and Python developer actively working on practical architectures. My primary technical focus is exploring the intersection of modern machine learning, vector retrieval mechanisms (RAG), and generative AI applications to solve tangible software challenges.
+              I am an aspiring AI/ML and Python developer actively working on practical architectures. My primary technical focus is exploring the intersection of modern machine learning, vector retrieval mechanisms (RAG), Generative AI, and emerging Agentic AI workflows to solve tangible software challenges.
             </p>
 
             <Link
@@ -56,7 +56,7 @@ export default function AboutPreview() {
                 <Cpu className="w-5 h-5" />
               </div>
               <h3 className="font-serif text-lg font-semibold text-ivory mb-2">
-                RAG &amp; LLM Systems
+                RAG &amp; Generative AI
               </h3>
               <p className="text-xs text-ivory-muted leading-relaxed">
                 Structuring document ingestion pipelines, dense vector embeddings, and semantic similarity search to ground foundation models without hallucination.
@@ -66,18 +66,18 @@ export default function AboutPreview() {
             {/* Card 2 */}
             <div className="p-6 rounded-2xl bg-background-card/80 border border-white/5 hover:border-champagne-400/40 transition-all duration-300 group">
               <div className="w-10 h-10 rounded-xl bg-champagne-400/10 border border-champagne-400/20 flex items-center justify-center text-champagne-300 mb-4 group-hover:scale-105 transition-transform">
-                <BookOpen className="w-5 h-5" />
+                <Bot className="w-5 h-5" />
               </div>
               <h3 className="font-serif text-lg font-semibold text-ivory mb-2">
-                Applied Machine Learning
+                Agentic AI Exploration
               </h3>
               <p className="text-xs text-ivory-muted leading-relaxed">
-                Feature normalization, cross-validation, and predictive classification algorithms in Scikit-learn, Pandas, and NumPy for healthcare and data domains.
+                Exploring autonomous reasoning loops, tool calling mechanisms, and structured execution graphs for multi-step automated workflows.
               </p>
             </div>
 
             {/* Card 3: Experience Snapshot */}
-            <div className="sm:col-span-2 p-6 rounded-2xl bg-gradient-to-br from-background-card to-[#14141c] border border-champagne-400/20 relative overflow-hidden">
+            <div className="sm:col-span-2 p-6 rounded-2xl bg-gradient-to-br from-background-card via-[#14141c] to-background-card border border-champagne-400/20 relative overflow-hidden">
               <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
                 <div>
                   <span className="text-[10px] font-mono uppercase tracking-[0.2em] text-champagne-400 font-semibold">

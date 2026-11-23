@@ -2,15 +2,17 @@
 
 import { useState, useMemo } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { BrainCircuit, Code2, Server, Database, Layout, Sparkles, CheckCircle2, Search, X } from "lucide-react";
+import { BrainCircuit, Code2, Server, Database, Layout, Sparkles, CheckCircle2, Search, X, Bot } from "lucide-react";
 import { SKILL_CATEGORIES } from "@/data/portfolio";
 
 const CATEGORY_ICONS: Record<string, React.ReactNode> = {
-  "AI & Machine Learning": <BrainCircuit className="w-5 h-5 text-champagne-400" />,
-  "Programming Languages": <Code2 className="w-5 h-5 text-champagne-400" />,
-  "Backend Development": <Server className="w-5 h-5 text-champagne-400" />,
-  "Database Systems": <Database className="w-5 h-5 text-champagne-400" />,
-  "Frontend Engineering": <Layout className="w-5 h-5 text-champagne-400" />,
+  "Programming": <Code2 className="w-5 h-5 text-champagne-400" />,
+  "Frontend": <Layout className="w-5 h-5 text-champagne-400" />,
+  "Backend": <Server className="w-5 h-5 text-champagne-400" />,
+  "Database": <Database className="w-5 h-5 text-champagne-400" />,
+  "AI/ML": <BrainCircuit className="w-5 h-5 text-champagne-400" />,
+  "Generative AI": <Sparkles className="w-5 h-5 text-champagne-400" />,
+  "Agentic AI": <Bot className="w-5 h-5 text-champagne-400" />,
 };
 
 export default function SkillsSection() {
@@ -19,7 +21,7 @@ export default function SkillsSection() {
 
   const categories = ["All", ...SKILL_CATEGORIES.map((cat) => cat.title)];
 
-  // Filter skills based on tab and optional search query
+  // Filter skills based on tab and search query
   const filteredCategories = useMemo(() => {
     let result =
       activeTab === "All"
@@ -65,7 +67,7 @@ export default function SkillsSection() {
             Architectural Proficiencies &amp; Tooling
           </h2>
           <p className="text-ivory-muted text-base sm:text-lg leading-relaxed font-light mb-8">
-            Organized across core machine learning architectures, statistical computing, asynchronous backends, and frontend interfaces.
+            Structured across foundational programming, backend APIs, machine learning pipelines, Generative AI models, and Agentic AI workflows.
           </p>
 
           {/* Search & Filter Bar */}
@@ -75,7 +77,7 @@ export default function SkillsSection() {
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search capabilities (e.g. RAG, Python, FastAPI, Embeddings)..."
+              placeholder="Search capabilities (e.g. RAG, Python, AI Agents, FastAPI)..."
               className="w-full bg-transparent text-sm text-ivory placeholder:text-ivory-subtle focus:outline-none"
             />
             {searchQuery && (
@@ -136,7 +138,7 @@ export default function SkillsSection() {
               {filteredCategories.length === 0 ? (
                 <div className="text-center py-16 p-8 rounded-3xl bg-background-card/50 border border-white/5">
                   <p className="text-ivory-muted text-sm font-mono">
-                    No capabilities matched &ldquo;{searchQuery}&rdquo;. Try searching for Python, RAG, or FastAPI.
+                    No capabilities matched &ldquo;{searchQuery}&rdquo;. Try searching for Python, RAG, or AI Agents.
                   </p>
                 </div>
               ) : (
@@ -160,7 +162,7 @@ export default function SkillsSection() {
                           </p>
                         </div>
                       </div>
-                      <span className="text-[11px] font-mono text-champagne-400 tracking-widest uppercase self-start sm:self-auto">
+                      <span className="text-[11px] font-mono text-champagne-400 tracking-widest uppercase self-start sm:self-auto font-semibold">
                         {cat.skills.length} Capabilities
                       </span>
                     </div>

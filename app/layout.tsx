@@ -19,20 +19,21 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: "Shailendra Patidar | Python Developer & AI/ML Enthusiast",
+    default: "Shailendra Patidar | Python Developer | AI/ML & Generative AI Enthusiast",
     template: "%s | Shailendra Patidar",
   },
   description:
-    "Production-grade portfolio of Shailendra Patidar — an aspiring AI/ML and Python Developer specializing in Retrieval-Augmented Generation (RAG), machine learning classifiers, and robust FastAPI backends.",
+    "Production-grade portfolio of Shailendra Patidar — an aspiring Python Developer and AI/ML & Generative AI Enthusiast exploring Retrieval-Augmented Generation (RAG), Agentic AI workflows, machine learning classifiers, and robust FastAPI backends.",
   keywords: [
     "Shailendra Patidar",
     "Shailendra Patidar Developer",
     "Python Developer Portfolio",
     "AI/ML Developer Portfolio",
-    "Python and Generative AI Developer",
-    "Machine Learning Engineer Indore",
+    "Generative AI Developer",
+    "Agentic AI Explorer",
     "FastAPI Python Developer",
     "RAG Architecture Specialist",
+    "Machine Learning Engineer Indore",
   ],
   authors: [{ name: "Shailendra Patidar", url: siteUrl }],
   creator: "Shailendra Patidar",
@@ -44,9 +45,9 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: siteUrl,
-    title: "Shailendra Patidar | Python Developer & AI/ML Specialist",
+    title: "Shailendra Patidar | Python Developer | AI/ML & Generative AI Enthusiast",
     description:
-      "Explore the software architecture, machine learning models, and RAG pipelines engineered by Shailendra Patidar.",
+      "Explore software architecture, machine learning models, RAG pipelines, and Agentic AI workflows engineered by Shailendra Patidar.",
     siteName: "Shailendra Patidar Portfolio",
     images: [
       {
@@ -59,9 +60,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Shailendra Patidar | Python Developer & AI/ML Specialist",
+    title: "Shailendra Patidar | Python Developer | AI/ML & Generative AI Enthusiast",
     description:
-      "Explore the software architecture, machine learning models, and RAG pipelines engineered by Shailendra Patidar.",
+      "Explore software architecture, machine learning models, RAG pipelines, and Agentic AI workflows engineered by Shailendra Patidar.",
     images: ["/images/profile.jpg"],
   },
   robots: {
@@ -86,7 +87,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Person",
     name: PERSONAL_INFO.name,
-    jobTitle: "Python Developer & AI/ML Specialist",
+    jobTitle: "Python Developer | AI/ML & Generative AI Enthusiast",
     url: siteUrl,
     image: `${siteUrl}/images/profile.jpg`,
     sameAs: [PERSONAL_INFO.github, PERSONAL_INFO.linkedin],
@@ -100,17 +101,20 @@ export default function RootLayout({
     },
     knowsAbout: [
       "Python",
-      "C",
-      "C++",
+      "JavaScript",
       "FastAPI",
       "REST APIs",
       "Machine Learning",
-      "RAG (Retrieval-Augmented Generation)",
+      "Retrieval-Augmented Generation (RAG)",
       "Generative AI",
+      "Agentic AI",
+      "AI Agents",
+      "Tool Calling",
       "Scikit-learn",
       "Pandas",
       "NumPy",
       "MySQL",
+      "SQLite",
       "PaddleOCR",
     ],
   };
